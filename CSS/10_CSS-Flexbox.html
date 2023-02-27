@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .flex-box{
+            width: 900px;
+            height: 500px;
+            box-shadow: 0 0 10px gray;
+            margin: 100px auto;
+            background-color: lightyellow;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .flex-item{
+            background-color: seagreen;
+            color: white;
+            padding: 20px 40px;
+            flex: 1;
+            
+        }
+        /* .flex-item:nth-child(1){
+            flex: 1;
+        }
+        .flex-item:nth-child(2){
+            flex: 4;
+        } */
+    </style>
+</head>
+<body>
+
+    <div class="flex-box">
+        <button class="flex-item">Item 1</button>
+        <button class="flex-item">Item 2</button>
+        <button class="flex-item">Item 3</button>
+    </div>
+    
+</body>
+</html>

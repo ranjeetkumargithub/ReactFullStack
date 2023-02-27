@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BG Style</title>
+    <style>
+        #bg-image{
+            width: 500px;
+            box-shadow: 0 0 10px black;
+            background-image: url("images/burger4.jpg");
+            color: white;
+            padding: 10px;
+        }
+        #bg-attach{
+            height: 200px;
+            box-shadow: 0 0 10px black;
+            background-image: url("images/burger4.jpg");
+            background-attachment: fixed;
+        }
+        #bg-position{
+            height: 300px;
+            width: 500px;
+            box-shadow: 0 0 10px;
+            background-image: url("images/breads_2.jpg");
+            background-position: center;     <!-- bottom-left/bottom-right/top-left/top-right -->
+
+        }
+        #bg-repeat{
+            height: 300px;
+            width: 500px;
+            box-shadow: 0 0 10px black;
+            /* background-image: url("images/nature.jpg");
+            background-attachment: scroll;
+            background-repeat: no-repeat;
+            background-position: bottom left; */
+            background: white url("images/nature.jpg") no-repeat scroll top left;
+        }
+        #bg-size{
+            height: 300px;
+            width: 500px;
+            box-shadow: 0 0 10px black;
+            background: white url("images/image_2.jpg") no-repeat scroll center;
+            background-size: cover;
+        }
+        #bg-linear{
+            height: 300px;
+            width: 500px;
+            box-shadow: 0 0 10px black;
+            background: linear-gradient(45deg,black,red,black);
+        }
+        #bg-radial{
+            height: 300px;
+            width: 500px;
+            box-shadow: 0 0 10px black;
+            background: radial-gradient(yellow,orange,red);
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="bg-image">
+        <h2>Bg-Image</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, accusantium placeat quisquam veritatis itaque iure alias temporibus omnis laboriosam corrupti aliquid ipsa recusandae sint maiores distinctio maxime iste, vero minima.</p>
+    </div>
+
+    <h2>Bg Attachment</h2>
+    <div id="bg-attach"></div>
+
+    <h2>Bg Position</h2>
+    <div id="bg-position"></div>
+
+    <h2>Bg Repeat</h2>
+    <div id="bg-repeat"></div>
+
+    <h2>Bg Size</h2>
+    <div id="bg-size"></div>
+
+    <h2>Bg Mix Linear Gradient</h2>
+    <div id="bg-linear"></div>
+
+    <h2>Bg Mix Radial Gradient</h2>
+    <div id="bg-radial"></div>
+
+
+    <div style="margin-bottom: 1000px;"></div>
+</body>
+</html>

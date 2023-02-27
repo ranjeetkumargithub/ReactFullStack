@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoom Effect</title>
+    <style>
+        .zoom{
+            width: 300px;
+            height: 500px;
+            margin: auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px black;
+            text-align: center;
+            position: relative;
+        }
+        .zoom img{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            transition: all 1s;
+            filter: grayscale(100%);
+        }
+        .zoom img:hover{
+            transform: scale(1.2,1.2);
+            cursor: pointer;
+            filter: grayscale(0%);
+        }
+        .content{
+            background-color: rgba(221, 119, 79, 0.5);
+            padding: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            bottom: 0;
+            transform: translateY(160px);
+            transition: all 1s;
+        }
+        .zoom:hover .content{
+            transform: translateY(0px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="zoom">
+        <img src="images/women.jpg" alt="">
+        <div class="content">
+            <h2>Flower</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
