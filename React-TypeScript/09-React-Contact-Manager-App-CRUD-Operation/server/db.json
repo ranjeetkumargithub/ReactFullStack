@@ -1,0 +1,80 @@
+{
+  "contacts": [
+    {
+      "name": "Vladeen Min",
+      "imageUrl": "https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png",
+      "mobile": "900079900",
+      "email": "vladeen@gmail.com",
+      "company": "BHEL Electronics",
+      "title": "Electrician",
+      "groupId": "4",
+      "id": "UyEDV5Yds"
+    },
+    {
+      "name": "Naveen",
+      "imageUrl": "https://cdn-icons-png.flaticon.com/512/147/147133.png",
+      "email": "naveen.uibrains@gmail.com",
+      "mobile": "09089009989",
+      "company": "Infosys",
+      "title": "Tech Lead",
+      "groupId": "1",
+      "id": "qj9XJK-"
+    },
+    {
+      "name": "Rajan",
+      "imageUrl": "https://e7.pngegg.com/pngimages/799/987/png-clipart-computer-icons-avatar-icon-design-avatar-heroes-computer-wallpaper-thumbnail.png",
+      "email": "rajan@gmail.com",
+      "mobile": "07079442363",
+      "company": "TCS",
+      "title": "System Engineer",
+      "groupId": "2",
+      "id": "bqhpa8T"
+    },
+    {
+      "name": "John",
+      "imageUrl": "https://cdn.pixabay.com/photo/2020/07/14/13/07/icon-5404125_1280.png",
+      "email": "john@gmail.com",
+      "mobile": "9876543210",
+      "company": "HP",
+      "title": "Tech Lead",
+      "groupId": "5",
+      "id": "caUU0v7"
+    },
+    {
+      "name": "Rashmika",
+      "imageUrl": "https://www.pngitem.com/pimgs/m/0-6243_user-profile-avatar-scalable-vector-graphics-icon-woman.png",
+      "email": "rashmika@gmail.com",
+      "mobile": "9567347823",
+      "company": "HCL",
+      "title": "Manager",
+      "groupId": "1",
+      "id": "CwFvHLN"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "Colleague"
+    },
+    {
+      "id": "2",
+      "name": "Friend"
+    },
+    {
+      "id": "3",
+      "name": "Family"
+    },
+    {
+      "id": "4",
+      "name": "Service"
+    },
+    {
+      "id": "5",
+      "name": "Community"
+    },
+    {
+      "id": "6",
+      "name": "Social"
+    }
+  ]
+}
