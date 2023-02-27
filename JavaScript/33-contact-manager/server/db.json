@@ -1,0 +1,70 @@
+{
+  "contacts": [
+    {
+      "name": "Vladeen Min",
+      "imageUrl": "https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png",
+      "mobile": "900079900",
+      "email": "vladeen@gmail.com",
+      "company": "BHEL Electronics",
+      "title": "Electrician",
+      "groupId": "4",
+      "id": "UyEDV5Yds"
+    },
+    {
+      "name": "Naveen",
+      "imageUrl": "https://cdn-icons-png.flaticon.com/512/147/147133.png",
+      "email": "naveen.uibrains@gmail.com",
+      "mobile": "09089009989",
+      "company": "Infosys",
+      "title": "Tech Lead",
+      "groupId": "1",
+      "id": "qj9XJK-"
+    },
+    {
+      "name": "Brad",
+      "imageUrl": "https://png.pngtree.com/png-clipart/20190922/original/pngtree-business-male-user-avatar-vector-png-image_4774078.jpg",
+      "email": "brad.wilson@gmail.com",
+      "mobile": "8539847713",
+      "company": "HCL Technologies",
+      "title": "Manager",
+      "groupId": "3",
+      "id": "nqcfNxj"
+    },
+    {
+      "name": "Jabby",
+      "imageUrl": "https://cdn.pixabay.com/photo/2020/07/14/13/07/icon-5404125_1280.png",
+      "email": "jabbi@gmail.com",
+      "mobile": "9060504030",
+      "company": "TCS",
+      "title": "Team Lead",
+      "groupId": "3",
+      "id": "5zac7JV"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "Colleague"
+    },
+    {
+      "id": "2",
+      "name": "Friend"
+    },
+    {
+      "id": "3",
+      "name": "Family"
+    },
+    {
+      "id": "4",
+      "name": "Service"
+    },
+    {
+      "id": "5",
+      "name": "Community"
+    },
+    {
+      "id": "6",
+      "name": "Social"
+    }
+  ]
+}

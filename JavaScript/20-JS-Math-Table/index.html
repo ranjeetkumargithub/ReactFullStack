@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          referrerpolicy="no-referrer" rel="stylesheet"/>
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="../bootstrap/icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+    <title>Math Table</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-dark bg-dark p-2 mb-3">
+        <a href="#" class="navbar-brand">Math Table</a>
+    </nav>
+
+    <!-- math table -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header bg-purples text-white">
+                        <h3>Kids Math Table</h3>
+                    </div>
+                    <div class="card-body bg-gray text-white">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div>
+                                        <label>Enter a Number</label>
+                                        <input type="number" class="form-control" id="req-number" placeholder="Your Number">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div>
+                                        <label for="multiplier" class="form-label">Select the Multiplier</label>
+                                        <input type="range" class="form-range" id="multiplier" min="1" max="10" value="1">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- result section -->
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body bg-gray">
+                        <div class="row align-items-center">
+                            <div class="col-md-2">
+                                <h1 class="display-2">
+                                    <span class="badge badge-secondary" id="number">1</span>
+                                </h1>
+                            </div>
+                            <div class="col-md-2">
+                                <h1>
+                                    <i class="fa fa-times fa-2x text-secondary"></i>
+                                </h1>
+                            </div>
+                            <div class="col-md-2">
+                                <h1 class="display-2">
+                                    <span class="badge badge-secondary" id="multiples">1</span>
+                                </h1>
+                            </div>
+                            <div class="col-md-2">
+                                <h1>
+                                    <i class="fa fa-equals fa-2x text-secondary"></i>
+                                </h1>
+                            </div>
+                            <div class="col-md-2">
+                                <h1 class="display-2">
+                                    <span class="badge badge-secondary" id="result">1</span>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

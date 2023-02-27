@@ -1,0 +1,12 @@
+.bg-purples{
+    background: linear-gradient(45deg, black, purple);
+}
+.bg-gray{
+    background-color: rgb(189, 182, 182);
+}
+.badge-secondary{
+    background: linear-gradient(45deg, black, purple);
+}
+.text-secondary{
+    color: #4c004c !important;
+}

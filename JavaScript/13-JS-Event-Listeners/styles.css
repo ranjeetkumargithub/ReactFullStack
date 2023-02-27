@@ -1,0 +1,36 @@
+div{
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin: 15px;
+}
+h1{
+    font-size: 35px;
+}
+button{
+    font-size: 20px;
+    padding: 14px 20px;
+}
+
+
+.limegreen{
+    background-color: limegreen;
+    padding: 15px;
+    box-shadow: 0 0 10px black;
+}
+.orangered{
+    background-color: orangered;
+    padding: 15px;
+    box-shadow: 0 0 10px black;
+}
+.purple{
+    background-color: purple;
+    padding: 15px;
+    box-shadow: 0 0 10px black;
+}
+.black{
+    background-color: black;
+    padding: 15px;
+    box-shadow: 0 0 10px black;
+}

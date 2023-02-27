@@ -1,0 +1,6 @@
+.bg-blue{
+    background: linear-gradient(45deg, black, blueviolet);
+}
+.text-blue{
+    color: rgb(159, 142, 174);
+}

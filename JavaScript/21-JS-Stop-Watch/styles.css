@@ -1,0 +1,15 @@
+.bg-darkslategray{
+    background: linear-gradient(45deg, darkslategray, purple);
+}
+.btn-success{
+    background: linear-gradient(45deg, black, green);
+}
+.btn-danger{
+    background: linear-gradient(45deg, black, red);
+}
+.btn-warning{
+    background: linear-gradient(45deg, black, orange);
+}
+.btn{
+    border-radius: 50px;
+}

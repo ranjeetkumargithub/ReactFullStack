@@ -1,0 +1,6 @@
+.bg-purples{
+    background: linear-gradient(45deg, black, purple);
+}
+.text-purples{
+    color: rgb(163, 114, 163);
+}

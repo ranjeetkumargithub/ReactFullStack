@@ -1,0 +1,14 @@
+.bg-green{
+    background: linear-gradient(45deg, black, green);
+}
+.bg-orange{
+    background: linear-gradient(45deg, black, orange);
+}
+.bg-blue{
+    background: linear-gradient(45deg, black, blueviolet);
+}
+
+.card, .card-body{
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}

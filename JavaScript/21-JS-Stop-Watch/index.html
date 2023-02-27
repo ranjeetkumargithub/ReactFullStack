@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="../bootstrap/icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+    <title>JS Stop Watch</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-dark bg-dark p-2 mb-3">
+        <a href="#" class="navbar-brand">JS Stop Watch</a>
+    </nav>
+
+    <!-- stop watch -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 m-auto">
+                <div class="card">
+                    <div class="card-header bg-darkslategray text-white text-center">
+                        <h3>JS Stop Watch</h3>
+                    </div>
+                    <div class="card-body text-center">
+                        <h1 class="display-2">
+                            <span id="minutes">00</span> :
+                            <span id="seconds">00</span> :
+                            <span id="m-seconds">00</span>
+                        </h1>
+                        <button class="btn btn-success text-white px-4" id="start-btn">Start</button>
+                        <button class="btn btn-danger text-white px-4" id="stop-btn">stop</button>
+                        <button class="btn btn-warning text-white px-4" id="reset-btn">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
