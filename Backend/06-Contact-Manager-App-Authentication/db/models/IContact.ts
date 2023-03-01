@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 export interface IContact {
-    userObj : mongoose.Schema.Types.ObjectId;
+    userObj: mongoose.Schema.Types.ObjectId;
     name: string;
     company: string;
     email: string;

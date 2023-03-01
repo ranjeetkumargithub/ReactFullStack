@@ -4,7 +4,7 @@ import cors from "cors";
 import {DBUtil} from "./db/util/DBUtil";
 import contactRoutes from "./routes/contactRoutes";
 import groupRoutes from "./routes/groupRoutes";
-import userRoutes from './routes/userRoutes';
+import userRoutes from "./routes/userRoutes";
 
 const app: Application = express();
 

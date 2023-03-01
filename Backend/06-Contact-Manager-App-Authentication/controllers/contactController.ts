@@ -3,8 +3,8 @@ import {validationResult} from "express-validator";
 import {IContact} from "../db/models/IContact";
 import ContactsTable from "../db/schemas/contactSchema";
 import mongoose from "mongoose";
-import { IUser } from "../db/models/IUser";
-import { UserValidationUtil } from "../util/UserValidationUtil";
+import {IUser} from "../db/models/IUser";
+import {UserValidationUtil} from "../util/UserValidationUtil";
 
 /**
  * @usage : Get all contacts
@@ -16,9 +16,9 @@ import { UserValidationUtil } from "../util/UserValidationUtil";
  */
 export const getAllContacts = async (request: Request, response: Response) => {
     try {
-        const user: IUser |any = await UserValidationUtil(request, response);
-        if(user){
-            const contacts: IContact[] = await ContactsTable.find({userObj : new mongoose.Types.ObjectId(user._id)});
+        const user: IUser | any = await UserValidationUtil(request, response);
+        if (user) {
+            const contacts: IContact[] = await ContactsTable.find({userObj: new mongoose.Types.ObjectId(user._id)});
             return response.status(200).json(contacts);
         }
     } catch (error: any) {
@@ -38,8 +38,8 @@ export const getAllContacts = async (request: Request, response: Response) => {
  */
 export const getContact = async (request: Request, response: Response) => {
     try {
-        const user: IUser |any = await UserValidationUtil(request, response);
-        if(user){
+        const user: IUser | any = await UserValidationUtil(request, response);
+        if (user) {
             const {contactId} = request.params;
             const mongoContactId = new mongoose.Types.ObjectId(contactId);
             const mongoUserId = new mongoose.Types.ObjectId(user._id);
@@ -51,7 +51,7 @@ export const getContact = async (request: Request, response: Response) => {
                 return response.status(404).json({msg: "Contact is not found"});
             }
             return response.status(200).json(contact);
-        }  
+        }
     } catch (error: any) {
         return response.status(500).json({
             msg: error.message
@@ -64,8 +64,10 @@ export const getContact = async (request: Request, response: Response) => {
  * @usage : Create a contact
  * @method : POST
  * @url : http://localhost:9000/contacts/
- * @param : name , imageUrl, mobile, email, company, title, groupId
  * @access : PRIVATE
+ * @param : name , imageUrl, mobile, email, company, title, groupId
+ * @param request
+ * @param response
  */
 export const createContact = async (request: Request, response: Response) => {
     try {
@@ -74,15 +76,15 @@ export const createContact = async (request: Request, response: Response) => {
         if (!errors.isEmpty()) {
             return response.status(400).json({errors: errors.array()});
         }
-        const user: IUser|any = await UserValidationUtil(request, response);
-        if(user){
+        const user: IUser | any = await UserValidationUtil(request, response);
+        if (user) {
             // read the form data
             const {name, imageUrl, mobile, email, company, title, groupId} = request.body;
 
             // check if the mobile exists
             const contact: IContact | undefined | null = await ContactsTable.findOne({
                 mobile: mobile,
-                userObj : new mongoose.Types.ObjectId(user._id)
+                userObj: new mongoose.Types.ObjectId(user._id)
             });
             if (contact) {
                 return response.status(200).json({msg: "Contact is Already Exist with same mobile number!"});
@@ -103,7 +105,6 @@ export const createContact = async (request: Request, response: Response) => {
                 return response.status(200).json(createdContact);
             }
         }
-        
     } catch (error: any) {
         return response.status(500).json({
             msg: error.message
@@ -126,8 +127,8 @@ export const updateContact = async (request: Request, response: Response) => {
         if (!errors.isEmpty()) {
             return response.status(400).json({errors: errors.array()});
         }
-        const user: IUser|any = await UserValidationUtil(request, response);
-        if(user){
+        const user: IUser | any = await UserValidationUtil(request, response);
+        if (user) {
             const {contactId} = request.params;
             const mongoContactId = new mongoose.Types.ObjectId(contactId);
             const mongoUserId = new mongoose.Types.ObjectId(user._id);
@@ -161,7 +162,6 @@ export const updateContact = async (request: Request, response: Response) => {
                 return response.status(200).json(updatedContact);
             }
         }
-        
     } catch (error: any) {
         return response.status(500).json({
             msg: error.message
@@ -180,8 +180,8 @@ export const updateContact = async (request: Request, response: Response) => {
  */
 export const deleteContact = async (request: Request, response: Response) => {
     try {
-        const user: IUser|any = await UserValidationUtil(request, response);
-        if(user){
+        const user: IUser | any = await UserValidationUtil(request, response);
+        if (user) {
             const {contactId} = request.params;
             const mongoContactId = new mongoose.Types.ObjectId(contactId);
             const mongoUserId = new mongoose.Types.ObjectId(user._id);
